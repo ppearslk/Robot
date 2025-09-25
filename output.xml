@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.11.9 on win32)" generated="2025-09-21T22:17:50.577543" rpa="false" schemaversion="5">
+<suite id="s1" name="Excle" source="c:\Users\Lenovo\Desktop\Robot\excle.robot">
+<test id="s1-t1" name="testka" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:17:50.855750" level="INFO">Opening browser 'Chrome' to base url 'https://signin.leb2.org/login'.</msg>
+<arg>url=https://signin.leb2.org/login</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-21T22:17:50.855230" elapsed="2.030117"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-21T22:17:52.886346" elapsed="0.081873"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:17:52.969738" level="INFO">Typing text '65070507220' into text field '//*[@id="input-1"]'.</msg>
+<arg>//*[@id="input-1"]</arg>
+<arg>65070507220</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:17:52.968725" elapsed="0.218690"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:17:53.189862" level="INFO">Typing password into text field '//*[@id="input-4"]'.</msg>
+<msg time="2025-09-21T22:17:53.308854" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="input-4"]</arg>
+<arg>password=_pear1412</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:17:53.189091" elapsed="0.224984"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:17:53.415633" level="INFO">Clicking button '//*[@id="app"]/div/div/div/div/div/div[2]/div/div[2]/div[2]/form/div/div[2]/button'.</msg>
+<arg>//*[@id="app"]/div/div/div/div/div/div[2]/div/div[2]/div[2]/form/div/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:17:53.415633" elapsed="0.121484"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-21T22:18:03.538666" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-21T22:17:53.538335" elapsed="10.000331"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:03.539672" level="INFO">Clicking element '//*[@id="class_list_content"]/div[1]/div/div/div[1]/span'.</msg>
+<arg>//*[@id="class_list_content"]/div[1]/div/div/div[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:03.539672" elapsed="0.095776"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:03.637954" level="INFO">Clicking element '//*[@id="class_list_content"]/div[1]/div/div/div[2]/a[2]'.</msg>
+<arg>//*[@id="class_list_content"]/div[1]/div/div/div[2]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:03.636447" elapsed="0.764592"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:04.403160" level="INFO">Clicking element '//*[@id="classListMain"]/div[1]/div/div[4]/div/div[1]'.</msg>
+<arg>//*[@id="classListMain"]/div[1]/div/div[4]/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:04.402039" elapsed="1.242161"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:05.646224" level="INFO">Clicking element '//*[@id="sidebar"]/div/div[3]/div/ul/li[3]/a'.</msg>
+<arg>//*[@id="sidebar"]/div/div[3]/div/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:05.645210" elapsed="1.017165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="table"]/tbody/tr[20]/td[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-21T22:18:06.663884" elapsed="0.652756"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@id="table"]/tbody/tr[20]/td[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-21T22:18:07.318091" elapsed="0.299416"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:07.687556" level="INFO">${Detail} = Midterm exam
+by PEERAPON SIRIPONGWUTIKORN
+Individual</msg>
+<var>${Detail}</var>
+<arg>//*[@id="table"]/tbody/tr[20]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:07.618453" elapsed="0.070102"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Detail}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-21T22:18:07.689553" elapsed="0.001004"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-21T22:18:07.694163" level="INFO">Clicking element '//*[@id="table"]/tbody/tr[20]/td[1]'.</msg>
+<arg>//*[@id="table"]/tbody/tr[20]/td[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-21T22:18:07.693110" elapsed="0.131112"/>
+</kw>
+<status status="PASS" start="2025-09-21T22:17:50.854193" elapsed="16.972131"/>
+</test>
+<status status="PASS" start="2025-09-21T22:17:50.582370" elapsed="17.246278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Excle" id="s1" pass="1" fail="0" skip="0">Excle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
